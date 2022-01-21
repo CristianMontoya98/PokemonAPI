@@ -19,10 +19,10 @@ export default function Card(props) {
   };
   return (
     <div className="card" style={{ backgroundColor: colors[props.data.type] }}>
+      <p className="card__id">{props.data.id}</p>
       <div className="imgContainer">
         <img src={props.data.img} alt={props.data.name} />
       </div>
-      <p>{props.data.id}</p>
       <p>{props.data.name}</p>
       <p>{props.data.type}</p>
     </div>
